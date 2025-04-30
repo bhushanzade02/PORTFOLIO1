@@ -1,0 +1,120 @@
+/* Reset & Base */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #eef2f5;
+  color: #222;
+  padding-top: 50px; /* push content below fixed navbar */
+}
+
+/* Navbar */
+.navbar {
+  position: fixed;
+  width: 100%;
+  background-color: #1e2a38;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+  padding: 20px 0;
+  z-index: 1000;
+}
+
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  font-size: 1.8rem;
+  color: #00bcd4;
+  font-weight: 700;
+}
+
+.nav-links a {
+  margin-left: 20px;
+  text-decoration: none;
+  color: #f1f1f1;
+  font-size: 1.1rem;
+  transition: color 0.3s;
+}
+
+.nav-links a:hover {
+  color: #00bcd4;
+}
+
+/* Hero Section */
+.hero-section {
+  height: 100vh;
+  background: linear-gradient(to right, #00bcd4, #ffffff);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding-top: 80px;
+}
+
+.hero-section h2 {
+  font-size: 2.8rem;
+  color: #1e2a38;
+  margin-bottom: 15px;
+}
+
+.tagline {
+  font-size: 1.4rem;
+  margin-bottom: 30px;
+  color: #37474f;
+}
+
+.btn {
+  display: inline-block;
+  padding: 10px 25px;
+  background-color: #007acc;
+  color: white;
+  text-decoration: none;
+  border-radius: 6px;
+  font-size: 1rem;
+  transition: background-color 0.3s, transform 0.2s;
+}
+
+.btn:hover {
+  background-color: #005fa3;
+  transform: scale(1.05);
+}
+
+/* Section Spacing */
+.about-section,
+.projects-section,
+.skills-section,
+.contact-section {
+  padding-top: 100px;
+}
+
+/* Optional: Section Backgrounds for Color Variety */
+.about-section {
+  background-color: #ffffff;
+}
+
+.projects-section {
+  background-color: #f7fafc;
+}
+
+.skills-section {
+  background-color: #ffffff;
+}
+
+.contact-section {
+  background-color: #f7fafc;
+}
+
+.logo {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 2rem;
+  color: white;
+  font-weight: 600;
+}

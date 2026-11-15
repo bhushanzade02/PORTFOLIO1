@@ -564,3 +564,39 @@
 }
 
 
+
+/* =========================================
+   DEPLOYED LANDING PAGE - FULL HERO VIEW
+   ========================================= */
+
+@media (min-width: 1101px) and (max-height: 850px) {
+
+  .hero {
+    height: 100svh !important;
+    min-height: 620px !important;
+    padding-top: 85px !important;
+    padding-bottom: 20px !important;
+  }
+
+  /* Move hero content upward */
+  .hero-copy {
+    padding-top: 45px !important;
+  }
+
+  /* Keep complete portrait and artwork visible */
+  .hero-art {
+    top: 150px !important;
+    height: 420px !important;
+  }
+
+  /* Keep text comfortably spaced */
+  .hero-bottom {
+    margin-top: 28px !important;
+    gap: 24px !important;
+  }
+
+  /* Show footer inside first screen */
+  .hero-footer {
+    bottom: 18px !important;
+  }
+}

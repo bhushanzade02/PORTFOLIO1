@@ -1,0 +1,441 @@
+
+---
+import '../styles/global.css';
+
+const name = 'Bhushan Zade';
+const email = 'bhushanzade02@gmail.com';
+const github = 'https://github.com/bhushanzade02';
+const linkedin = 'https://www.linkedin.com/in/bhushanzade02/';
+
+const labels = [
+  { text: 'PYTHON', className: 'label-python' },
+  { text: 'MACHINE LEARNING', className: 'label-ml' },
+  { text: 'STATISTICS', className: 'label-stats' },
+  { text: 'GENERATIVE AI', className: 'label-genai' },
+  { text: 'SCIENTIFIC COMPUTING', className: 'label-science' },
+  { text: 'NLP', className: 'label-nlp' },
+];
+
+const projects = [
+  {
+    number: '01',
+    title: 'ALGONIX',
+    category: 'CUSTOM MACHINE LEARNING LIBRARY',
+    description: 'A lightweight ML library built with Python and NumPy. Implements Linear and Logistic Regression, gradient descent and stochastic gradient descent, plus MSE, MAE, RMSE and R² metrics. Results are compared with scikit-learn.',
+    stack: ['Python', 'NumPy', 'Machine Learning', 'scikit-learn'],
+    type: 'feature',
+    link: 'https://github.com/bhushanzade02/MACHINE-LEARNING',
+    linkLabel: 'VIEW SOURCE',
+    pypi: 'https://pypi.org/project/algonix/',
+  },
+  {
+    number: '02',
+    title: 'SMS FRAUD DETECTION',
+    category: 'NLP · CLASSIFICATION',
+    description: 'An academic project that classifies potentially fraudulent SMS messages using text cleaning, tokenization, TF-IDF and Word2Vec. Models include Logistic Regression, Random Forest and SVM, evaluated with accuracy, precision, recall and F1-score.',
+    stack: ['Python', 'NLP', 'TF-IDF', 'Word2Vec', 'SVM'],
+    type: 'sms',
+  },
+  {
+    number: '03',
+    title: 'NUMERICAL COMPUTING',
+    category: 'MATHS · ALGORITHMS',
+    description: 'A numerical computing library for vector and matrix operations, LU decomposition, Gaussian elimination, Newton-Raphson root finding, numerical differentiation and integration.',
+    stack: ['Python', 'Linear Algebra', 'Numerical Methods'],
+    type: 'math',
+  },
+];
+
+const skills = [
+  { title: 'LANGUAGES', items: 'Python · SQL · R · C · C++' },
+  { title: 'ML & DATA', items: 'scikit-learn · NumPy · Pandas · Statistical Inference · EDA' },
+  { title: 'AI & DEEP LEARNING', items: 'LangChain · PyTorch · TensorFlow · NLP · NLTK' },
+  { title: 'ENGINEERING', items: 'FastAPI · Git · GitHub · Docker · Jupyter · Kaggle · Google Colab' },
+];
+---
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#eee9de" />
+    <meta name="description" content="Bhushan Zade — AI Analyst exploring machine learning, scientific computing, statistics and generative AI." />
+    <meta property="og:title" content="Bhushan Zade — AI Analyst & Machine Learning" />
+    <meta property="og:description" content="A curious mind working at the intersection of statistics, algorithms and applied AI." />
+    <title>Bhushan Zade — AI Analyst & Machine Learning</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=DM+Sans:wght@400;500;600;700;800&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  </head>
+
+  <body>
+    <div class="grain" aria-hidden="true"></div>
+
+    <header class="topbar">
+      <a class="brand" href="#top" aria-label="Bhushan Zade home">BZ<span>®</span></a>
+
+      <nav aria-label="Main navigation">
+        <a href="#about">ABOUT</a>
+        <a href="#work">WORK</a>
+        <a href="#toolkit">TOOLKIT</a>
+        <a href="#contact">CONTACT</a>
+      </nav>
+
+      <a class="availability" href="mailto:bhushanzade02@gmail.com">
+        <span></span> OPEN TO GOOD IDEAS
+      </a>
+    </header>
+
+    <main id="top">
+
+      <!-- HERO SECTION -->
+
+      <section class="hero section-pad">
+        <div class="hero-meta mono">
+          <span>PORTFOLIO / 2026</span>
+          <span>PUNE, INDIA ↗</span>
+        </div>
+
+        <div class="hero-copy">
+          <p class="eyebrow" data-reveal>
+            AI ANALYST @ FRESH GRAVITY · SCIENTIFIC COMPUTING · MACHINE LEARNING
+          </p>
+
+          <h1 class="hero-title">
+            <span class="title-line">BHUSHAN</span>
+            <span class="title-line title-second">
+              ZADE<span class="period">.</span>
+            </span>
+          </h1>
+
+          <div class="hero-bottom">
+            <p class="hero-statement">
+              Curious by nature.<br />
+              <em>Analytical</em> by design.
+            </p>
+
+            <p class="hero-intro">
+              I turn mathematical ideas and data into practical experiments,
+              algorithms and AI-powered solutions.
+            </p>
+          </div>
+        </div>
+
+
+        <div class="hero-art" aria-label="Bhushan Zade portrait">
+
+          <!-- Rotating background circles -->
+          <div class="orbit orbit-one"></div>
+          <div class="orbit orbit-two"></div>
+          <div class="sun-disc"></div>
+
+          <!-- Your artistic portrait -->
+          <img
+            src="/images/bhushan-artistic.png"
+            alt="Bhushan Zade"
+            class="character-photo"
+          />
+
+          <!-- Floating technical labels -->
+          <div class="floating-label label-python" data-float>
+            PYTHON<span>01</span>
+          </div>
+
+          <div class="floating-label label-ml" data-float>
+            MACHINE LEARNING<span>02</span>
+          </div>
+
+          <div class="floating-label label-stats" data-float>
+            STATISTICS<span>03</span>
+          </div>
+
+          <div class="floating-label label-genai" data-float>
+            GENERATIVE AI<span>04</span>
+          </div>
+
+          <div class="floating-label label-science" data-float>
+            SCIENTIFIC COMPUTING<span>05</span>
+          </div>
+
+          <div class="floating-label label-nlp" data-float>
+            NLP<span>06</span>
+          </div>
+
+          <span class="scribble scribble-a">stay curious ↗</span>
+          <span class="scribble scribble-b">learn / build / repeat</span>
+
+        </div>
+
+        <div class="hero-footer mono">
+          <span>SCROLL TO EXPLORE ↓</span>
+          <span>DESIGNED TO THINK DIFFERENTLY</span>
+          <span>01 — 04</span>
+        </div>
+      </section>
+
+      <!-- INTRODUCTION BAND -->
+
+      <section class="intro-band" aria-label="Personal statement">
+        <p>
+          DATA IS A LANGUAGE.
+          <span>MATHEMATICS IS ITS GRAMMAR.</span>
+          AI IS ONE WAY TO MAKE IT SPEAK.
+        </p>
+      </section>
+
+      <!-- ABOUT SECTION -->
+
+      <section class="about section-pad" id="about">
+        <div class="section-kicker mono" data-reveal>
+          <span>01 / THE PERSON</span>
+          <span>ABOUT ME</span>
+        </div>
+
+        <div class="about-grid">
+          <h2 data-reveal>
+            Numbers tell stories.<br />
+            <em>I like finding them.</em>
+          </h2>
+
+          <div class="about-copy" data-reveal>
+            <p>
+              I'm Bhushan — an AI Analyst at Fresh Gravity with an MSc in
+              Scientific Computing. I enjoy connecting statistics,
+              programming and machine learning to understand problems
+              and build useful solutions.
+            </p>
+
+            <p>
+              My work and personal projects range from implementing
+              algorithms from first principles to exploring NLP, deep
+              learning and generative AI. I like knowing not only
+              <em>what</em> a model predicts, but <em>why</em> it works.
+            </p>
+
+            <div class="about-signoff">
+              Currently exploring
+              <span>AI · ML · the maths behind it all</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="note-row" data-reveal>
+          <div class="paper-note note-yellow">
+            <span class="pin"></span>
+            <small>MY APPROACH</small>
+            <strong>Understand<br />the basics.<br />Build with intent.</strong>
+            <span class="note-doodle">✳</span>
+          </div>
+
+          <div class="paper-note note-blue">
+            <span class="pin"></span>
+            <small>THE BIG PICTURE</small>
+            <strong>From equations<br />to experiments<br />to impact.</strong>
+            <span class="note-doodle">↗</span>
+          </div>
+
+          <div class="note-caption mono">
+            A LITTLE CURIOSITY GOES A LONG WAY.
+          </div>
+        </div>
+      </section>
+
+      <!-- PROJECTS SECTION -->
+
+      <section class="work section-pad" id="work">
+        <div class="section-kicker mono" data-reveal>
+          <span>02 / SELECTED WORK</span>
+          <span>THINGS I'VE BUILT</span>
+        </div>
+
+        <div class="work-heading" data-reveal>
+          <h2>MADE WITH<br /><em>INTENTION.</em></h2>
+          <p>
+            Small collection of projects exploring algorithms, language
+            and computation. Each one taught me something worth keeping.
+          </p>
+        </div>
+
+        <div class="project-list">
+          {projects.map((project) => (
+            <article class={"project-card project-" + project.type} data-reveal>
+              <div class="project-visual" aria-hidden="true">
+                {project.type === 'feature' && (
+                  <div class="visual-algonix">
+                    <span class="visual-big">A</span>
+                    <span class="visual-small">ALGO<br />NIX</span>
+                    <span class="axis axis-x"></span>
+                    <span class="axis axis-y"></span>
+                    <span class="plot-dot dot-one"></span>
+                    <span class="plot-dot dot-two"></span>
+                    <span class="plot-dot dot-three"></span>
+                    <span class="plot-line"></span>
+                  </div>
+                )}
+
+                {project.type === 'sms' && (
+                  <div class="visual-sms">
+                    <div class="chat chat-a">Your package is waiting…</div>
+                    <div class="chat chat-b">Potential scam detected</div>
+                    <div class="scan-stamp">TEXT<br />SCAN</div>
+                    <span class="sms-spark">✳</span>
+                  </div>
+                )}
+
+                {project.type === 'math' && (
+                  <div class="visual-math">
+                    <span class="matrix">[ 2  1  0 ]<br />[ 4  3  1 ]<br />[ 1  0  5 ]</span>
+                    <span class="math-symbol">∫</span>
+                    <span class="math-caption">f(x) dx</span>
+                    <span class="math-circle"></span>
+                  </div>
+                )}
+              </div>
+
+              <div class="project-info">
+                <div class="project-topline mono">
+                  <span>{project.number} / {project.category}</span>
+                  <span>PROJECT</span>
+                </div>
+
+                <h3>{project.title}</h3>
+                <p>{project.description}</p>
+
+                <div class="tag-row">
+                  {project.stack.map((tag) => <span>{tag}</span>)}
+                </div>
+
+                {project.link && (
+                  <div class="project-links">
+                    <a class="text-link mono" href={project.link} target="_blank" rel="noreferrer">
+                      {project.linkLabel} ↗
+                    </a>
+
+                    {project.pypi && (
+                      <a class="text-link mono" href={project.pypi} target="_blank" rel="noreferrer">
+                        PYPI PACKAGE ↗
+                      </a>
+                    )}
+                  </div>
+                )}
+
+                {!project.link && (
+                  <span class="project-footnote mono">
+                    ACADEMIC / PERSONAL PROJECT
+                  </span>
+                )}
+              </div>
+            </article>
+          ))}
+        </div>
+
+        <div class="more-work mono" data-reveal>
+          <span>MORE CODE, NOTES & EXPERIMENTS</span>
+          <a href={github} target="_blank" rel="noreferrer">
+            EXPLORE MY GITHUB ↗
+          </a>
+        </div>
+      </section>
+
+      <!-- SKILLS SECTION -->
+
+      <section class="toolkit section-pad" id="toolkit">
+        <div class="section-kicker mono" data-reveal>
+          <span>03 / THE TOOLKIT</span>
+          <span>TOOLS I REACH FOR</span>
+        </div>
+
+        <div class="toolkit-heading" data-reveal>
+          <h2>A GOOD IDEA<br /><em>NEEDS GOOD TOOLS.</em></h2>
+          <p>My current working toolkit — always evolving, always learning.</p>
+        </div>
+
+        <div class="skill-grid">
+          {skills.map((skill, i) => (
+            <div class="skill-card" data-reveal>
+              <span class="skill-index mono">0{i + 1}</span>
+              <h3>{skill.title}</h3>
+              <p>{skill.items}</p>
+              <span class="skill-star">✳</span>
+            </div>
+          ))}
+        </div>
+
+        <div class="interest-strip mono">
+          <span>ALWAYS LEARNING</span>
+          <span>DEEP LEARNING</span>
+          <span>GENERATIVE AI</span>
+          <span>REINFORCEMENT LEARNING</span>
+          <span>STATISTICAL MODELLING</span>
+        </div>
+      </section>
+
+      <!-- EDUCATION SECTION -->
+
+      <section class="education section-pad" id="education">
+        <div class="section-kicker mono" data-reveal>
+          <span>04 / THE FOUNDATION</span>
+          <span>EDUCATION</span>
+        </div>
+
+        <div class="education-grid">
+          <h2 data-reveal>BUILT ON<br /><em>GOOD FOUNDATIONS.</em></h2>
+
+          <div class="education-items">
+            <article class="education-item" data-reveal>
+              <span class="mono">2024 — 2026</span>
+              <div>
+                <h3>MSc · Scientific Computing</h3>
+                <p>Savitribai Phule Pune University, Pune</p>
+                <strong>8.36 SGPA</strong>
+              </div>
+            </article>
+
+            <article class="education-item" data-reveal>
+              <span class="mono">2021 — 2024</span>
+              <div>
+                <h3>BSc · Computer Science, Statistics & Mathematics</h3>
+                <p>Government Institute of Science, Nagpur · RTMNU</p>
+                <strong>7.09 CGPA</strong>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- CONTACT SECTION -->
+
+      <section class="contact section-pad" id="contact">
+        <div class="section-kicker mono" data-reveal>
+          <span>05 / SAY HELLO</span>
+          <span>CONTACT</span>
+        </div>
+
+        <div class="contact-main" data-reveal>
+          <p class="eyebrow mono">HAVE A QUESTION, IDEA OR OPPORTUNITY?</p>
+          <h2>LET'S MAKE<br /><em>THINGS MATTER.</em></h2>
+          <a class="email-link" href="mailto:bhushanzade02@gmail.com">
+            {email} ↗
+          </a>
+        </div>
+
+        <div class="contact-bottom mono">
+          <span>PUNE, INDIA</span>
+
+          <div class="social-links">
+            <a href={github} target="_blank" rel="noreferrer">GITHUB ↗</a>
+            <a href={linkedin} target="_blank" rel="noreferrer">LINKEDIN ↗</a>
+            <a href="/Bhushan-Zade-Resume.pdf" target="_blank">RESUME ↗</a>
+          </div>
+
+          <span>© 2026 BHUSHAN ZADE</span>
+        </div>
+      </section>
+
+    </main>
+
+    <script>
+      import '../scripts/motion';
+    </script>
+  </body>
+</html>

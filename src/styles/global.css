@@ -520,3 +520,47 @@
   }
 }
 
+
+
+/* =========================================
+   NETLIFY DESKTOP OVERLAP FIX
+   ========================================= */
+
+@media (min-width: 1101px) and (max-width: 1450px) {
+
+  /* Give the name and text more controlled space */
+  .hero-copy {
+    width: 53% !important;
+  }
+
+  /* Reduce oversized name slightly */
+  .hero-title {
+    font-size: clamp(76px, 10.8vw, 148px) !important;
+    line-height: 0.82 !important;
+  }
+
+  /* Create breathing space between text elements */
+  .hero-bottom {
+    gap: 24px !important;
+  }
+
+  .hero-intro {
+    max-width: 220px !important;
+  }
+
+  /* Keep artwork in its existing position */
+  .hero-art {
+    right: 7.6vw !important;
+    width: 38% !important;
+  }
+
+  /* Preserve portrait sizing */
+  .hero-art .character-photo {
+    width: 82% !important;
+    height: 92% !important;
+    max-width: 360px !important;
+    max-height: 460px !important;
+  }
+}
+
+
